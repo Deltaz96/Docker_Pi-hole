@@ -9,8 +9,8 @@ services:
       - "81:80/tcp"
     environment:
       TZ: 'Asia/kolkata'
-      WEBPASSWORD: 'R*kMpd7-htFfrnw'
+      WEBPASSWORD: 'PASSWORD'
     volumes:
-      - './etc-pihole:/etc/pihole'
-      - './etc-dnsmasq.d:/etc/dnsmasq.d'
+      - '/home/dev/docker/pihole/etc-pihole:/etc/pihole'
+      - '/home/dev/docker/pihole/etc-dnsmasq.d:/etc/dnsmasq.d'
     restart: unless-stopped
